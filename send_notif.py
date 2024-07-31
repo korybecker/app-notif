@@ -10,10 +10,10 @@ import os
 # load env vars
 load_dotenv()
 
-SMTP_SERVER = os.getenv('SMTP_SERVER_UPDATED')
+SMTP_SERVER = os.getenv('SMTP_SERVER')
 SMTP_PORT = os.getenv('SMTP_PORT')
-FROM_EMAIL_ADDRESS = os.getenv('FROM_EMAIL_ADDRESS_UPDATED')
-FROM_EMAIL_PASSWORD = os.getenv('FROM_EMAIL_PASSWORD_UPDATED2')
+FROM_EMAIL_ADDRESS = os.getenv('FROM_EMAIL_ADDRESS')
+FROM_EMAIL_PASSWORD = os.getenv('FROM_EMAIL_PASSWORD')
 TO_EMAIL_ADDRESS = os.getenv('TO_EMAIL_ADDRESS')
 
 def send_email(to_address, subject, body):

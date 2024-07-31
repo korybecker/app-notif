@@ -31,7 +31,8 @@
 `crontab -e`
 2. Add command at the bottom of the file
 *Runs send_notif.py every day at 9AM*
-`0 9 * * * /usr/bin/python3 /path/to/send_notif.py`
+`0 0 * * * /bin/bash -c 'source /path/to/venv/bin/activate && python /path/to/send_notif.py'`
+
 
 ### 7. Add applications
 `python3 add_app.py <company> <position> <date_applied> <job_url>`
